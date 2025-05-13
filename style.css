@@ -1,0 +1,233 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    
+    height: 100%;
+    width: auto;
+    margin: 0;
+    display: flex;
+    align-content: center;
+    flex-direction: column;
+}
+
+
+.nav_div {
+    width: 100%;
+    background-color: #DAB27F;
+    padding: 10px 10px;
+    font-size: 15px;
+    display: flex;
+    justify-content: space-between;
+    position: fixed;
+}
+
+.nav_div ul {
+    margin: auto 0;
+    list-style: none;
+    display: flex;
+    gap: 20px;
+    padding: 0;
+}
+
+.nav_div li a {
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    color: #2D2D2D;
+    text-decoration: none;
+}
+
+.logo{
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+.spacer {
+    height: 90px; /* uguale all'altezza di .nav_div */
+  }
+
+.title{
+    margin: 10px auto;
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+.description {
+    margin: 10px;
+    background-color:#C1272D;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    border-radius: 12px;
+}
+
+.button_mobile {
+    margin: 10px auto;
+    margin-top: 0;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 50px;
+    background-color: #C1272D;
+    display: none;
+    cursor: pointer;
+    font-size: 16px;
+    color: white;
+}
+
+@media (max-width: 600px) {
+    .button_mobile {
+        display: flex;
+    }
+
+    .description {
+        display: none;
+    }
+}
+
+.title_descr {
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    color:#F5E1C8;
+    text-align: center;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+p {
+    /*font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;*/
+    margin: auto 10px;
+    margin-bottom: 10px;
+}
+
+.text_descr{
+    color:#F5E1C8;
+}
+
+.above_pizzas{
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    margin: 10px;
+    text-align: left;
+}
+
+.container_pizze {
+    /*margin: 10px auto;*/
+    width: 100%;
+    padding-top: 10px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    flex-wrap: wrap;
+    align-items: center;
+    gap: 12px;
+}
+
+.container{
+    background-color: #F5E1C8;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    flex-wrap: wrap;
+    
+}
+
+@media (max-width: 600px) {
+    .container_pizze {
+        flex-direction: column;
+    }
+
+    .above_pizzas{
+        text-align: center;
+    }
+}
+
+.pizza1 {
+    background-image: url(https://i.pinimg.com/736x/a0/6c/1e/a06c1e73f1e4edd9e7460d4528305b59.jpg);
+    width: 300px;
+    height: 300px;
+    background-size: cover;
+    /* Adatta l'immagine al div */
+    background-position: center;
+    /* Centra l'immagine */
+    background-repeat: no-repeat;
+    border-radius: 12px;
+}
+
+.pizza2 {
+    background-image: url(https://i.pinimg.com/736x/12/d5/f9/12d5f9f2fee6c1ccb003b1f678ee0ed9.jpg);
+    width: 300px;
+    height: 300px;
+    background-size: cover;
+    /* Adatta l'immagine al div */
+    background-position: center;
+    /* Centra l'immagine */
+    background-repeat: no-repeat;
+    border-radius: 12px;
+}
+
+.pizza3 {
+    background-image: url(https://spadellandia.it/wp-content/uploads/ricette/Pizza-salsiccia-e-cipolla_12387_-1-1200x900.jpg);
+    width: 300px;
+    height: 300px;
+    background-size: cover;
+    /* Adatta l'immagine al div */
+    background-position: center;
+    /* Centra l'immagine */
+    background-repeat: no-repeat;
+    border-radius: 12px;
+}
+
+.pizza4 {
+    background-image: url(https://www.pizzeriadamichele.it/wp-content/uploads/2024/03/Pizza-rucolona.jpg);
+    width: 300px;
+    height: 300px;
+    background-size: cover;
+    /* Adatta l'immagine al div */
+    background-position: center;
+    /* Centra l'immagine */
+    background-repeat: no-repeat;
+    border-radius: 12px;
+}
+
+.menu_button {
+    margin: 20px auto;
+    padding: 10px 20px;
+    border-radius: 999px;
+    background-color:#C1272D;
+    color: white;
+    border: none;
+    cursor: pointer;
+    font-size: 16px;
+    transition: background-color 0.3s ease;
+}
+
+.menu_button:hover {
+    background-color:#F5E1C8;
+    color:#555;
+}
+
+.menu_pizze {
+    margin: 10px auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    flex-wrap: nowrap;
+    align-items: center;
+    font-size: 20px;
+    gap: 10px;
+}
+
+.pizza-item {
+    margin-bottom: 20px;
+    padding: 10px;
+    border-bottom: 1px solid #ccc;
+    font-size: 18px;
+    line-height: 1.5;
+}
+
+.pizza-item strong {
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size: 20px;
+    color: darkred;
+}
+
+.ingredienti {
+    font-style: italic;
+    color: #555;
+}
